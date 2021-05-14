@@ -1,10 +1,24 @@
 import "./styles.css";
+import Header from "./components/Header";
+import React from "react";
 
-export default function App() {
+function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div className="Container">
+      <Header />
     </div>
   );
 }
+
+export default App;
+
+// class App extends React.Component {
+//   render (){
+//     return <div>
+//     <h1>wawawa</h1>
+//   </div>
+
+//   }
+// }
+
+// export default App;
