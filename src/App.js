@@ -19,17 +19,21 @@ function App() {
       reminder: true
     },
     {
-      id: "1",
+      id: "3",
       text: "Food shopping",
       date: "Feb 8th",
       reminder: false
     }
-  ]);
+  ])
+
+const deleteTask = (id) => {
+console.log('deleting task with id',id)
+}
 
   return (
     <div className="Container">
       <Header />
-      <Tasks tasks={tasks} />
+      <Tasks tasks={tasks} onDelete={deleteTask}/>
     </div>
   );
 }
