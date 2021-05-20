@@ -32,7 +32,7 @@ setTasks(tasks.filter((task) => task.id !== id
 }
 
 const toggleReminder = (id) => {
-console.log('reminder this', id);
+setTasks(tasks.map((task) => task.id === id ? {...task, reminder:!task.reminder} : task))
 }
 
   return (
