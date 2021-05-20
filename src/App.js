@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./styles.css";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
+import AddComponent from './components/AddComponent'
 import React from "react";
 
 function App() {
@@ -38,6 +39,7 @@ setTasks(tasks.map((task) => task.id === id ? {...task, reminder:!task.reminder}
   return (
     <div className="Container">
       <Header />
+      <AddComponent />
        {tasks.length>0 ? (<Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> ): ('No tasks to show')}
     </div>
   );
