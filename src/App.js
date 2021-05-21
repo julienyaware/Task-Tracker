@@ -33,7 +33,9 @@ setTasks(tasks.filter((task) => task.id !== id
 }
 
 const addTask = (task) => {
-console.log(task)
+  const id =  Math.floor(Math.random()*10000) +1
+const newTask = {id,...task}
+setTasks([...tasks, newTask])
 }
 
 const toggleReminder = (id) => {
