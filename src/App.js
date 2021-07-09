@@ -10,7 +10,7 @@ const [showAddTask, setShowAddTask] = useState(false)
   const [tasks, setTasks] = useState([
     {
       id: "1",
-      text: "Doctors appoinymen",
+      text: "Doctors appointment",
       date: "Feb 6th",
       reminder: true
     },
@@ -54,13 +54,4 @@ setTasks(tasks.map((task) => task.id === id ? {...task, reminder:!task.reminder}
 
 export default App;
 
-// class App extends React.Component {
-//   render (){
-//     return <div>
-//     <h1>wawawa</h1>
-//   </div>
 
-//   }
-// }
-
-// export default App;
